@@ -10,13 +10,17 @@ In case of doubts, please contact andre.zanella@imdea.org
 
 ## Models included
 
-Here's a brief description on what's included on this page. 
+Here's a brief description on what's included on this page. Please note this work was developed in Python 3.9 and most of the statistical work was done using Scipy and Pomegranate libraries. We strongly suggest using those for better compatibility. 
 
 ### 1. Share of sessions and traffic across apps:
 For every app, what was the percentage of sessions and traffic
 
 ### 2. Session arrival rate distribution
-Considering all antennas included on our study, we present 10 sampled ones ranked by their traffic load, with $0.1$ having the lowest load and $1.0$ the highest
+Considering all antennas included on our study, we present 10 sampled ones ranked by their traffic load, with $decile=0.1$ having the lowest load and $decile=1.0$ the highest. Since for a day, the arrival rate had a multi-modal distribution represented by peak and non-peak hours, we split results for those two distributions. Please note peak hours is represented by a Gaussian distribution (with $\mu$ represented by column *loc* and $\sigma$ represented by *scale*), while non-peak hours is represented by a Pareto distribution (with its shape parameter being represented by column *alpha* and the scale that represents the shift on loads being the *scale* column; on this case the *loc* column will always be zero). 
+
+### 3. Transport layer session-level traffic probability distributions
+
+### 4. Relation between traffic and duration for transport-layer sessions
 
 ## Acknowledgements
 This work was supported by BANYAN project, which received funding from the European Union’s Horizon 2020 research and innovation program under grant agreement no. 860239; by NetSense, grant no. 2019-T1/TIC-16037 funded by Comunidad de Madrid; by the research project CoCo5G (Traffic Collection, Contextual Analysis, Data-driven Optimization for 5G), grant no. ANR-22-CE25-0016, funded by the French National Research Agency (ANR); and by the Regional Government of Madrid through the grant 2020-T2/TIC-20710 for Talent Attraction. 
