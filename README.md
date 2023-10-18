@@ -10,7 +10,7 @@ In case of doubts, please contact andre.zanella@imdea.org
 
 In case you use this data in your study, please cite our work using the following: 
 ```bibtex
-@misc{10.1145/3618257.3624825, 
+@inproceedings{10.1145/3618257.3624825, 
   title={Characterizing and Modeling Session-Level Mobile Traffic Demands from Large-Scale Measurements}, 
   author={Zanella, André Felipe and Bazco-Nogueras, Antonio and Ziemlicki, Cezary and Fiore, Marco}, 
   year={2023},
