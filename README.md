@@ -8,6 +8,22 @@ DOI link: https://doi.org/10.1145/3618257.3624825
 
 In case of doubts, please contact andre.zanella@imdea.org
 
+In case you use this data in your study, please cite our work using the following: 
+```bibtex
+@misc{10.1145/3618257.3624825, 
+  title={Characterizing and Modeling Session-Level Mobile Traffic Demands from Large-Scale Measurements}, 
+  author={Zanella, André Felipe and Bazco-Nogueras, Antonio and Ziemlicki, Cezary and Fiore, Marco}, 
+  year={2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi={10.1145/3618257.3624825},
+  url= = {https://doi.org/10.1145/3618257.3624825},
+  booktitle = {Proceedings of the 23rd ACM Internet Measurement Conference},
+  location = {Montreal, QC, Canada},
+  series = {IMC '23}
+}
+```
+
 ## Models included
 
 Here's a brief description on what's included on this page. Please note this work was developed in Python 3.9 and most of the statistical work was done using Scipy and Pomegranate libraries. We strongly suggest using those for better compatibility. All of those are used on `sample_generator.ipynb` file, as an usage example generating samples on $N$ antennas and $D$ days. 
