@@ -44,6 +44,8 @@ For every application, we present the probability distribution function modeled 
 
 Please note all applications will have columns columns *u_g* representing the mean $\mu$ and *s_g* representing the std deviation $\sigma$. When assembling the mixture, you must declare its weight as 1. In case the application has additional peaks composing the mixture model, its $\mu$ and $\sigma$ will be described by $[u_1,u_2,u_3]$ and $[s_1,s_2,s_3]$, respectively, while each component weight will be $[w_1,w_2,w_3]$. 
 
+Also note is that the generated random traffic samples $x$ are the exponent of $10^{x}$, i.e. an $x=6$ means the traffic consumed by this random session is $10^{6}$ bytes, which meand the Normal distributions declared here are actually log-normal distributions.
+
 ### 4. Relation between traffic and duration for transport-layer sessions
 
 We model for each app the relation between the traffic consumed by a specific transport layer session and its expected duration. For a service $s$, its traffic $v_{s}$ will have duration $d$ modeled as a power-law:
