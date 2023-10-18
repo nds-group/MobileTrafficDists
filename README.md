@@ -32,7 +32,7 @@ Please note all applications will have columns columns *u_g* representing the me
 
 We model for each app the relation between the traffic consumed by a specific transport layer session and its expected duration. For a service $s$, its traffic $v_{s}$ will have duration $d$ modeled as a power-law:
 
-$\tilde{v}_s(d)=\alpha_s\cdot d^{\,\beta_s}$
+$\tilde{v}_s(d)=\alpha_s\cdot d^{\beta_s}$
 
 Note that during our example workflow, we actually generate first the traffic value and later obtain the duration by the inverse function of this powerlaw (calculated by `func_invpowerlaw` on the example). On the data files, coefficient $\alpha$ is represented by column *a*, while $\beta$ is represented by column *b*. 
 
